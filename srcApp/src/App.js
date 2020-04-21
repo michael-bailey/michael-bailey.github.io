@@ -13,7 +13,9 @@ export default class App extends Component {
 
   changePage(page) {
     console.log("changing")
-    this.setState({page: page})
+    this.setState({
+      page: page
+    })
   }
 
   render() {

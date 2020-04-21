@@ -20,22 +20,26 @@
 }
 
 .HeaderBar h1 {
-    width: 100%;
-    margin: 0;
+    width: 30%;
+
     padding-top: 2vh;
     padding-left: 2vw;
 
-    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 2%;
+    margin-right: 0;
 }
 
 .HeaderBar ul {
+    font-size: larger;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     list-style: none;
     padding-bottom: 2vh;
+    flex-grow: 1;
 }
 
 .HeaderBar ul li {
-
 }
