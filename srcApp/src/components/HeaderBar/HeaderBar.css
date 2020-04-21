@@ -1,0 +1,41 @@
+.HeaderBar {
+    position: sticky;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: fit-content;
+
+    margin: 0;
+    padding: auto;
+
+    border-bottom-width: 3vh;
+    border-color: black;
+
+    color: black;
+    background-color: white;
+
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.37);
+
+}
+
+.HeaderBar h1 {
+    width: 100%;
+    margin: 0;
+    padding-top: 2vh;
+    padding-left: 2vw;
+
+    margin: auto;
+}
+
+.HeaderBar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-bottom: 2vh;
+}
+
+.HeaderBar ul li {
+
+}
