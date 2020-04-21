@@ -52,13 +52,16 @@
     
     flex-direction: row;
     flex-grow: 1;
-    justify-content: centre;
+    justify-content: space-between;
     align-items: center;
 
     list-style: none;
 }
 
 .HeaderBar ul li {
+    width: 25vw;
+
+    text-align: center;
     display: inline-block;
-    margin: auto;
+    margin: 0;
 }
