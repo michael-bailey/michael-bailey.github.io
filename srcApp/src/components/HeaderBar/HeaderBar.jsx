@@ -6,11 +6,8 @@ export default class HeaderBar extends Component {
     render() {
         return (
             <div className="HeaderBar">
-                <div>
+                <div className="TopBar">
                     { this.props.children }
-                </div>
-                <div>
-                    { this.props.menuItems }
                 </div>
             </div>
         );

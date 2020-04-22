@@ -2,10 +2,12 @@
     position: sticky;
     display: block;
 
-    top: -60px;
+    z-index: 1;
+
+    top: 0px;
     left: 0;
     width: 100vw;
-    height: fit-content;
+    height: 14vh;
 
     margin: 0;
     padding: auto;
@@ -18,19 +20,22 @@
 
     color: black;
     background-color: white;
-
-    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.37);
-
 }
 
-.HeaderBar h1 {
-    position: sticky;
-    width: fit-content;
+.HeaderBar .TopBar {
+    position: relative;
+
+    height: 10vh;
+    width: 100%;
 
     top: 0;
+    z-index: 1;
+
+    align-items: center;
+    text-align: center;
 
     padding-top: 2vh;
-    padding-bottom: 0;
+    padding-bottom: 2vh;
     padding-left: 0;
     padding-right: 0;
 
@@ -38,30 +43,6 @@
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
-}
 
-.HeaderBar ul {
-    display: flex;
-
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    padding-left: 0;
-    padding-right: 0;
-
-    font-size: larger;
-    
-    flex-direction: row;
-    flex-grow: 1;
-    justify-content: space-between;
-    align-items: center;
-
-    list-style: none;
-}
-
-.HeaderBar ul li {
-    width: 25vw;
-
-    text-align: center;
-    display: inline-block;
-    margin: 0;
+    background-color: white;
 }
