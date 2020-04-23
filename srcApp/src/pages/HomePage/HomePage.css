@@ -8,3 +8,19 @@
     border-radius: 100px;
     box-shadow: 0px 5px 14px -1px rgba(0,0,0,0.3);
 }
+
+.programmingSect {
+    display: block;
+    
+    padding: 10px;
+
+    margin-top: 50px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 16px;
+    border-color: lightgray;
+}

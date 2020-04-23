@@ -21,8 +21,10 @@ export default class HomePage extends Component {
             <div>
                 <img src={profile} alt="¯\_(ツ)_/¯" className="profileImage" />
                 <h2>Home</h2>
-                <p>This is a website dedicated to my projects and hobbies.</p>
-                <div>
+                <p>This is a website dedicated to my projects and hobbies.<br/> as well as infomation about me.</p>
+                <div className="programmingSect">
+                    <h3>Programming</h3>
+                    <p>Quite a lot of what i do in my spare time is programming. <br/>This ranges from some test programs to try a specific area of a language or computing.<br/> to a few larger projects (for example this website).</p>
                 </div>
             </div>
         );
