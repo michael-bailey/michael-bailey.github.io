@@ -1,48 +1,179 @@
-.HeaderBar {
-    position: sticky;
-    display: block;
+@media screen and (max-width: 699px) {
+    .HeaderBar {
+        position: sticky;
+        display: flex;
+    
+        z-index: 1;
+    
+        top: -6vh;
+        left: 0;
+        width: 100vw;
+        height: 18vh;
+    
+        flex-direction: column;
+        flex-grow: 0;
 
-    z-index: 1;
+        margin: 0;
+        padding: auto;
+    
+        border-bottom-width: 3vh;
+        border-color: black;
+    
+        align-items: center;
+        justify-content: center;
+    
+        color: black;
+        background-color: white;
+        box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.37);
 
-    top: 0px;
-    left: 0;
-    width: 100vw;
-    height: 14vh;
+         
+    }
 
-    margin: 0;
-    padding: auto;
+    .HeaderBar .HeaderContents {
+        display: flex;
+        position: fixed;
 
-    border-bottom-width: 3vh;
-    border-color: black;
+        height: 12vh;
+        width: 100vw;
 
-    align-items: center;
-    justify-content: center;
+        z-index: 3;
 
-    color: black;
-    background-color: white;
+        top: 0;
+
+        text-align: center;
+        justify-content: center;
+
+        background-color: white;
+
+         
+    }
+    
+    .HeaderBar .MenuBar {
+        display: flex;
+        position: sticky;
+
+        float: bottom;
+    
+        height: 2vh;
+        width: 100%;
+    
+        top: 12vh;
+        z-index: 2;
+    
+        flex-direction: row;
+        flex-grow: 1;
+        
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+    
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        padding-left: 0;
+        padding-right: 0;
+    
+        margin-top: 12vh;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    
+        list-style: none;
+
+          
+    }
 }
 
-.HeaderBar .TopBar {
-    position: relative;
+@media screen and (min-width: 700px) {
+    .HeaderBar {
+        position: fixed;
+        display: flex;
+    
+        z-index: 1;
+    
+        top: 0px;
+        left: 0;
+        width: 100vw;
+        height: 12vh;
 
-    height: 10vh;
-    width: 100%;
+        flex-direction: row;
+        flex-grow: 1;
+        justify-content: space-between;
+    
+        margin: 0;
+        padding: auto;
+    
+        border-bottom-width: 3vh;
+        border-color: black;
+    
+        align-items: center;
+        justify-content: center;
+    
+        color: black;
+        background-color: white;
 
-    top: 0;
-    z-index: 1;
+        box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.37);
+    }
 
-    align-items: center;
-    text-align: center;
+    .HeaderBar .HeaderContents {
+        display: block;
+        position: initial;
 
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    padding-left: 0;
-    padding-right: 0;
+        width: fit-content;
 
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        padding-left: 0;
+        padding-right: 0;
+    
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 2vw;
+        margin-right: auto;
 
-    background-color: white;
+    }
+    
+    .HeaderBar .MenuBar {
+        position: relative;
+        display: flex;
+    
+        height: 10vh;
+        width: min-content;
+    
+        top: 0;
+        z-index: 1;
+    
+        align-items: center;
+        text-align: center;
+
+        flex-direction: row;
+        flex-grow: 1;
+        justify-content: flex-end;
+    
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        padding-left: 0;
+        padding-right: 0;
+    
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .HeaderBar .MenuBar li {
+        display: initial;
+
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+    
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 8vw;
+        margin-right: 2vw;
+
+         
+    }
 }

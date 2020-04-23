@@ -8,44 +8,61 @@
   background-color: #61dafb;
 }
 
-.menuPane {
-  position: absolute;
+@media screen and (max-width: 699px) {
 
-  width: 15vw;
-}
+  .pageSpacer {
+    display: block;
 
-.pageSpacer {
-  display: block;
+    width: 80%;
+    height: 1000px;
 
-  width: 80%;
-  height: 1000px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
 
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
+    margin-top: 10vh;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
 
-  margin-top: 10vh;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
+    border-width: 8px;
+    border-color: black;
+    border-radius: 16px;
 
-  border-width: 8px;
-  border-color: black;
-  border-radius: 16px;
+    align-content: center;
+    text-align: center;
 
-  align-content: center;
-  text-align: center;
-
-  color: black;
-  background-color: white;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    color: black;
+    background-color: white;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (min-width: 700px) {
+  .pageSpacer {
+    display: block;
+
+    width: 80vw;
+    height: 1000px;
+
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+    margin-top: 18vh;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-width: 8px;
+    border-color: black;
+    border-radius: 16px;
+
+    align-content: center;
+    text-align: center;
+
+    color: black;
+    background-color: white;
   }
 }

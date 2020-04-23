@@ -20,7 +20,7 @@ export default class HomePage extends Component {
         return(
             <div>
                 <img src={profile} alt="¯\_(ツ)_/¯" className="profileImage" />
-                <h2>Website</h2>
+                <h2>Home</h2>
                 <p>This is a website dedicated to my projects and hobbies.</p>
                 <div>
                 </div>

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import HeaderBar from './components/HeaderBar/HeaderBar';
-import MenuBar from './components/Menu/MenuBar'
 
 import AboutPage from './pages/AboutPage/AboutPage';
 import CVPage from "./pages/CVPage/CVPage";
@@ -22,15 +21,11 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <HeaderBar>
-          <h1>Michael Bailey</h1>
+        <HeaderBar title="Michael Bailey">
+          <li>Home</li>
+          <li>Projects</li>
+          <li>About</li>
         </HeaderBar>
-        <MenuBar>
-          <li>hello world</li>
-          <li>hello world</li>
-          <li>hello world</li>
-        </MenuBar>
-
         <div className="pageSpacer">
           {this.state.page}
         </div>
