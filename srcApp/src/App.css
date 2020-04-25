@@ -13,7 +13,7 @@
   .pageSpacer {
     display: block;
 
-    width: 80%;
+    width: 96%;
     height: 1000px;
 
     padding-top: 0;
@@ -42,7 +42,7 @@
   .pageSpacer {
     display: block;
 
-    width: 80vw;
+    width: 72vw;
     height: 1000px;
 
     padding-top: 0;

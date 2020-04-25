@@ -11,7 +11,7 @@ export default class App extends Component {
     page: <HomePage />,
   }
 
-  changePage(page) {
+  switchPage(page) {
     console.log("changing")
     this.setState({
       page: page
@@ -20,16 +20,16 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
+      <>
         <HeaderBar title="Michael Bailey">
-          <li>Home</li>
-          <li>Projects</li>
-          <li>About</li>
+          <li onClick={() => this.switchPage(<HomePage />)}>Home</li>
+          <li onClick={() => this.switchPage(<CVPage />)}>Projects</li>
+          <li onClick={() => this.switchPage(<AboutPage />)}>About</li>
         </HeaderBar>
         <div className="pageSpacer">
           {this.state.page}
         </div>
-      </div>
+      </>
     );
   }
 }

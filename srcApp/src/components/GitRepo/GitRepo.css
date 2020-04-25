@@ -1,0 +1,21 @@
+.GitRepo {
+    text-align: left;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 16px;
+    border-color: lightgray;
+}
+
+.GitRepo h3 {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.GitRepo p {
+    margin-top: 5%;
+    margin-left: 5%;
+}
