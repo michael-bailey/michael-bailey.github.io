@@ -12,7 +12,7 @@ export default class GitRepo extends Component {
     render() {
         return(
             <div className="GitRepo">
-                <a href={this.props.gitObject.html_url}><h3>{this.props.gitObject.name}</h3></a>
+                <h3><a href={this.props.gitObject.html_url}>{this.props.gitObject.name}</a></h3>
                 <p>{this.props.gitObject.description}</p>
             </div>
         );

@@ -20,10 +20,9 @@ export default class HomePage extends Component {
     }
 
     getGithubPages() {
-        
         return(
             <>
-                {this.state.currentRepos.map(function(item){return (<GitRepo gitObject={item} />)})}        
+                {this.state.currentRepos.slice(0,2).map(function(item){return (<GitRepo gitObject={item} />)})}        
             </>
         )
     }
