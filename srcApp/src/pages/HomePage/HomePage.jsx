@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 
-import profile from "../../res/img/profile smaller.png"
+
 import GitRepo from "../../components/GitRepo/GitRepo"
+import Gallery from "../../components/Gallery/Gallery"
+
+import profile from "../../res/img/profile smaller.png"
 
 // importing images
 
@@ -57,9 +60,7 @@ export default class HomePage extends Component {
                     <p>
                         As a small side project i have started doing some simple photography.<br/>basiclly messing about with a camera taking pictures of plants as they make good desktop backgrounds.
                     </p>
-                    <div className="Gallery">
-                        
-                    </div>
+                    <Gallery />
                 </div>
             </>
         );

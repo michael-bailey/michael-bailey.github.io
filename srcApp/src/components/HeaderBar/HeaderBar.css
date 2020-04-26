@@ -1,20 +1,28 @@
+.HeaderBar {
+    display: flex;
+
+    min-width: 400px;
+    min-height: 50px;
+
+    left: 0;
+
+    z-index: 1;
+
+    flex-direction: column;
+    flex-grow: 0;
+
+    margin: 0;
+    padding: auto;
+}
+
 @media screen and (max-width: 699px) {
     .HeaderBar {
         position: sticky;
-        display: flex;
-    
-        z-index: 1;
     
         top: -6vh;
-        left: 0;
+
         width: 100vw;
         height: 18vh;
-    
-        flex-direction: column;
-        flex-grow: 0;
-
-        margin: 0;
-        padding: auto;
     
         border-bottom-width: 3vh;
         border-color: black;
@@ -86,12 +94,10 @@
 @media screen and (min-width: 700px)  {
     .HeaderBar {
         position: fixed;
-        display: flex;
-    
-        z-index: 1;
+
     
         top: 0px;
-        left: 0;
+
         width: 100vw;
         height: 12vh;
 
