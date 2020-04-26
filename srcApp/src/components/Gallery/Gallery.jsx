@@ -12,6 +12,10 @@ export default class Gallery extends Component {
         this.getImages.bind(this)
     }
 
+    showmodal(imageSrc) {
+        
+    }
+
     componentDidMount() {
         const context = require.context("../../res/img/Gallery/", false, /\.jpe?g/)
         this.setState({images: context.keys().map(context)});

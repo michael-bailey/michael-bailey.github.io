@@ -1,7 +1,7 @@
 .Gallery {
     display: grid;
 
-    grid-template-columns: 10vw;
+    grid-template-columns: auto;
 
     gap: 20px;
 
@@ -11,6 +11,7 @@
 }
 
 .Gallery img {
+    
     width: 100%;
     height: auto;
 
@@ -25,16 +26,7 @@
 }
 
 .Gallery img:hover {
-    width: 200px;
-    height: 150px;
-
-    transform: scale(1.20);
-
-    border-radius: 16px;
-
-    object-fit: cover;
-
-    box-shadow: -1px 10px 19px -10px rgba(0,0,0,0.67);
+    transform: scale(1.1);
     transition: ease-in-out;
     transition-duration: 300ms;
 }
