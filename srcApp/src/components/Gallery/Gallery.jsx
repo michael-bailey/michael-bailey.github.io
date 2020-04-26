@@ -18,7 +18,7 @@ export default class Gallery extends Component {
 
     componentDidMount() {
         const context = require.context("../../res/img/Gallery/", false, /\.jpe?g/)
-        this.setState({images: context.keys().map(context)});
+        this.setState({images: context.keys().splice(0, 6).map(context)});
     }
 
     getImages() {

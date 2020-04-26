@@ -1,7 +1,7 @@
 .HeaderBar {
     display: flex;
 
-    min-width: 400px;
+    min-width: 300px;
     min-height: 50px;
 
     left: 0;
@@ -20,6 +20,7 @@
         position: sticky;
     
         top: -6vh;
+        
 
         width: 100vw;
         height: 18vh;

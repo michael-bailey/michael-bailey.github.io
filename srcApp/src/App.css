@@ -3,7 +3,7 @@
   font-family: "Open Sans" sans-serif;
 
   width: 100%;
-  height: 100%;
+  height: fit-content;
 
   background-color: #61dafb;
 }
@@ -13,7 +13,7 @@
   .pageSpacer {
     display: block;
 
-    width: 96%;
+    width: 94%;
     height: 1000px;
 
     padding-top: 0;
