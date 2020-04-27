@@ -15,11 +15,12 @@ export default class HomePage extends Component {
 
     state = {
         currentRepos: [],
-        Gallery: []
+        images: []
     }
 
     HomePage(props) {
         this.getGithubPages.bind(this);
+        this.getImages.bind(this)
     }
 
     getGithubPages() {
@@ -30,11 +31,22 @@ export default class HomePage extends Component {
         )
     }
 
+    getImages() {
+        console.log(this.state.images)
+        return(
+            <>
+                {this.state.images.map((item) => <img src={item} alt="whoops. not found" />)}
+            </>
+        )
+    }
+
     componentDidMount() {
-        console.log(this.state)
         fetch("https://api.github.com/users/michael-bailey/repos")
         .then(res => res.json())
-        .then(result => {this.setState({currentRepos: result});console.log(this.state)})
+        .then(result => {this.setState({currentRepos: result})})
+
+        const context = require.context("../../res/img/Gallery/", false, /\.jpe?g/)
+        this.setState({images: context.keys().splice(0, 6).map(context)});
     }
 
     render() {
@@ -60,7 +72,9 @@ export default class HomePage extends Component {
                     <p>
                         As a small side project i have started doing some simple photography.<br/>basiclly messing about with a camera taking pictures of plants as they make good desktop backgrounds.
                     </p>
-                    <Gallery />
+                    <Gallery>
+                        {this.getImages()}
+                    </Gallery>
                 </div>
             </>
         );
